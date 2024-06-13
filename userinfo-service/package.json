@@ -1,0 +1,29 @@
+{
+  "name": "userinfo-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --timeout 5000",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Aulia Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1",
+    "mongoose-unique-validator": "^5.0.0",
+    "redis": "^4.6.14"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "mocha": "^10.4.0",
+    "sinon": "^18.0.0",
+    "supertest": "^7.0.0"
+  }
+}

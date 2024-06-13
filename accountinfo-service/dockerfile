@@ -1,0 +1,20 @@
+FROM node:14
+#create a app directory
+
+WORKDIR /app
+
+#Install App Dependencies
+
+COPY package*.json ./
+
+#run npm install
+
+RUN npm install
+
+#bundle app source
+
+COPY . .
+
+EXPOSE 3001
+
+CMD ["npm","start"]
